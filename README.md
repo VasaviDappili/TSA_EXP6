@@ -24,7 +24,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 from statsmodels.tsa.seasonal import seasonal_decompose
-from sklearn.preprocessing import MinMaxScalerfrom sklearn.metrics import mean_absolute_error, mean_squared_error
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.metrics import mean_absolute_error, mean_squared_error
 data = pd.read_csv("C:/Users/admin/Downloads/Chocolate Sales (2).csv")
 
 data['Date'] = pd.to_datetime(data['Date'], dayfirst=True)
@@ -161,10 +162,12 @@ print(final_predictions)
 <img width="629" height="470" alt="image" src="https://github.com/user-attachments/assets/51a71457-a055-43e4-b482-d68a83967a82" />
 
 #### TEST_PREDICTION
-<img width="826" height="484" alt="image" src="https://github.com/user-attachments/assets/ee2ab2f8-bdb5-4098-86d6-780e2df619c8" />
+<img width="964" height="523" alt="image" src="https://github.com/user-attachments/assets/7e9ca1d1-ff1f-4f5b-89a9-75f80000281a" />
 
 #### FINAL_PREDICTION
-<img width="846" height="484" alt="image" src="https://github.com/user-attachments/assets/7b85b2dd-3683-44a3-8f73-77609fd87f2f" />
+<img width="964" height="678" alt="image" src="https://github.com/user-attachments/assets/dbe8ecb3-81d5-44cb-a15b-4372ba6ffa85" />
+
+
 
 ### RESULT:
 Thus the program run successfully based on the Holt Winters Method model.
